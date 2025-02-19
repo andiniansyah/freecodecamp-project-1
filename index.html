@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0"/>
+        <title>Survey Kepuasan Toko Buku Hilang</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Survey Kepuasan Toko Buku Hilang</h1>
+            <p id="description">Terima kasih telah menjaga toko buku agar tidak hilang</p>
+        </header>
+        <form id="survey-form">
+            <fieldset class="data-diri">
+                <label for="name">Nama:
+                    <input class="text" id="name" type="text" placeholder="Sungjin" required/>
+                </label>
+                <label id="sex">Jenis kelamin:
+                    <label for="sex">
+                        <input  value="perempuan" id="sex" type="radio" name="sex" checked>Perempuan
+                    </label>
+                    <label><input value="laki-laki" id="sex" type="radio" name="sex">Laki-laki
+                    </label>
+                </label>
+                <label id="number-label" for="number">Usia: 
+                    <input class="text" id="number" type="number" min="10" max="100" placeholder="32" required/>
+                </label>
+                <label id="email-label" for="email">Email: 
+                    <input class="text" id="email" type="email" placeholder="sungjin@gmail.com" required/>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="dropdown">Status:
+                    <select id="dropdown" required>
+                        <option>(select one)</option>
+                        <option>Peneliti</option>
+                        <option>Pelajar</option>
+                        <option>Mahasiswa</option>
+                        <option>Orang tua</option>
+                    </select>
+                </label>
+                <label id="checkbox">Tujuan kunjungan:
+                    <label for="checkbox">
+                        <input value="referensi" id="checkbox" type="checkbox">Mencari referensi jurnal/artikel/buku
+                    </label>
+                    <label for="checkbox">
+                        <input value="hiburan" id="checkbox" type="checkbox" >Mencari bacaan hiburan
+                    </label>
+                    <label for="checkbox">
+                        <input value="tutorial" id="checkbox" type="checkbox">Mencari buku tutorial
+                    </label>
+                    <label for="checkbox">
+                        <input value="anak" id="checkbox" type="checkbox">Mengenalkan buku pada anak
+                    </label>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend id="saran">Saran dan masukan:</legend>
+                <textarea rows="5" placeholder="Perbanyak buku fiksi ya..."></textarea>
+            </fieldset>
+            <label for="submit">
+                <input class="submit" id="submit" type="submit">
+            </label>
+        </form>
+    </body>
+</html>
